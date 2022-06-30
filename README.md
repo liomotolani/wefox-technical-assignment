@@ -27,7 +27,5 @@ that mapped the payment dto to the payment entity which will be saved in the dat
 it was used to make a call to the validate payment endpoint and also the error log endpoint to log errors and save it in the database.
 9. I created a Dockerfile for the microservice and added the service to the docker-compose.yml file
 ## :pushpin: Things to improve
-
-_If u have more time or want to improve somthing..._
-I would have used mapstruct for my object mapping
-I would have also used Spring webflux which is uses reactive programming for it's implementation which is suitable for applications that are event driven, and this handles event loop well
+1. I would have used mapstruct for my object mapping
+2. I would have also used Spring webflux which is uses reactive programming for it's implementation which is suitable for applications that are event driven, and this handles event loop well
