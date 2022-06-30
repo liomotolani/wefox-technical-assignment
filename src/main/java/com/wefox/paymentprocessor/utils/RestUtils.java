@@ -5,6 +5,7 @@ import com.wefox.paymentprocessor.model.Error;
 import com.wefox.paymentprocessor.model.Payment;
 import com.wefox.paymentprocessor.model.PaymentDTO;
 import com.wefox.paymentprocessor.model.response.ValidateResponse;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -34,6 +35,8 @@ public class RestUtils {
     @Value("${error.log.url}")
     private  String logErrorUrl;
 
+    @NonNull
+    private final RestTemplate restTemplate;
 
     @SneakyThrows
     public boolean saveLoggedError(Error error) {
